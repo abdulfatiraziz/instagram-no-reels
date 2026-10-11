@@ -1,0 +1,49 @@
+{
+  "instagram_version": "450.0.0.50.77",
+  "version_code": 385611395,
+  "minimum_android_api": 28,
+  "cpu_abi": "arm64-v8a",
+  "included_density_resources": "xxhdpi",
+  "source_base_sha256": "241ef5537888f5931522335891fdb9b9408393e708f1a08fae9440100d8f339c",
+  "patched_base_sha256": "e14ef782bcb125386a36bd67806e16c9a7ec97e54abce8698e6423004d958dd3",
+  "split_set_sha256": "ac8fec469d811ffd74ef450bf1b6a5a0f4d75529570a744f2a3433ca77ad6d5f",
+  "signing_certificate_sha256": "607dfb009763b5cca08f9b40f0c55189d3e67c6149a8e06852f23ec96ae4807f",
+  "patch": {
+    "class": "LX/00MT;",
+    "methods": [
+      "A00",
+      "A01",
+      "A03"
+    ],
+    "behavior": "Remove CLIPS from phone/tablet tab lists; use Feed when default would be CLIPS"
+  },
+  "tested_device": {
+    "model": "Pixel 8a",
+    "android": "17",
+    "tests": {
+      "installed": true,
+      "user_signed_in": true,
+      "four_remaining_tabs_selected": true,
+      "no_reels_tab": true,
+      "cold_restart": true
+    }
+  },
+  "standalone_apk_sha256": "dcdafac03cc25fc7388603310c4188feb0aac2b2a2855a7f589d42762fea45f8",
+  "standalone_apk_bytes": 147332787,
+  "standalone_packaging": {
+    "tool": "APKEditor 1.4.9",
+    "patched_base_dex_files_identical": 22,
+    "device_checks": {
+      "single_apk_installed": true,
+      "login_preserved_during_same_key_update": true,
+      "cold_restart": true,
+      "four_tabs_visible": [
+        "Home",
+        "Messages",
+        "Search",
+        "Profile"
+      ],
+      "reels_tab_present": false
+    }
+  }
+}
